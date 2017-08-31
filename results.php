@@ -22,7 +22,7 @@
                 <li v-for="item in items">
                     <img id="ptag" src="images/p.png">
                     <h3>{{item.address}}</h3>
-                    <h4>({{item.distance}}km væk)</h4>
+                    <h4>({{item.distance}}km away)</h4>
 
                 </li>
             </ul>
