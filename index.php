@@ -8,15 +8,20 @@
     </head>
     <body>
         <header>
-            <img src="">
+            <img src="./img/logo.png">
         </header>
-        <main>
+        <main id="main-index">
             <button>Quick search</button>
-            <p>Radius</p>
+            <article class="box">    
+                <p>Radius in km</p>
+                <img src="./img/left-arrow.png" id="down" onclick="modify_qty(-1)">
+                <input id="qty" value="5" />
+                <img src="./img/right-arrow.png"id="up" onclick="modify_qty(1)">
+            </article>
         </main>
         <footer>
             <a href="search.php">Normal Search</a>
         </footer>
-
+        <script src="./js/counter.js"></script>
     </body>
 </html>
