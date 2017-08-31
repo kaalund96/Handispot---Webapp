@@ -4,21 +4,42 @@ const app = new Vue({
         items: [{
                 address: 'Brunsgalleri',
                 distance: "2,5"
+               },
+            { address: 'ftgftfg',
+              distance: "5"
             },
-            { address: 'ftgftfg' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
-            { address: 'Brunsgalleri' },
+            { address: 'Brunsgalleri',
+              distance: "5"
+            },
+            { address: 'Brunsgalleri',
+              distance: "5"
+            },
+            { address: 'Brunsgalleri', 
+              distance: "5"
+            },
+            { address: 'Brunsgalleri',
+              distance: "5"
+            },
+            { address: 'Brunsgalleri',
+              distance: "5"
+            },
+            { address: 'Brunsgalleri',
+              distance: "5"
+            },
+            { address: 'Brunsgalleri', 
+              distance: "5"
+            },
+            { address: 'Brunsgalleri',
+              distance: "5"
+            },
+            { address: 'Brunsgalleri',
+              distance: "5"
+            },
+            { address: 'Brunsgalleri',
+              distance: "5"
+            },
+            
+         
         ]
     }
 });
