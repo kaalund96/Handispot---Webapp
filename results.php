@@ -16,7 +16,7 @@
         <a href="search.php">Search</a>
     </header>
     <main>
-        <h1>15 results found</h1>
+        <h1>4 results found</h1>
         <div id="app">
             <ul>
                 <li v-for="item in items">
