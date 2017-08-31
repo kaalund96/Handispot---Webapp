@@ -14,32 +14,6 @@ const app = new Vue({
             { address: 'Brunsgalleri',
               distance: "5"
             },
-            { address: 'Brunsgalleri', 
-              distance: "5"
-            },
-            { address: 'Brunsgalleri',
-              distance: "5"
-            },
-            { address: 'Brunsgalleri',
-              distance: "5"
-            },
-            { address: 'Brunsgalleri',
-              distance: "5"
-            },
-            { address: 'Brunsgalleri', 
-              distance: "5"
-            },
-            { address: 'Brunsgalleri',
-              distance: "5"
-            },
-            { address: 'Brunsgalleri',
-              distance: "5"
-            },
-            { address: 'Brunsgalleri',
-              distance: "5"
-            },
-            
-         
         ]
     }
 });
