@@ -1,6 +1,10 @@
 body{
     background-color:#343434;
 }
+h1, h2, h3, h4, h5, h6, p, a{
+    color:#ffffff;
+    font-family:sans-serif;
+}
 header img{
     width:60vw;
     position: relative;
@@ -9,19 +13,22 @@ header img{
 footer{
     background-color:#4a4a4a;
     height:15vh;
-    position:relative;
 }
 footer a{
-    color:#ffffff;
     background-color:#0063b3;
     text-decoration:none;
-    padding:4vw 15vw;
+    padding:3vw 12vw;
     border-radius:30vw;
-    font-family:sans-serif;
-    font-size:5vw;
+    font-size:4vw;
     position: relative;
-    top:8vw;
-    left:15vw;
+    top:5vh;
+    left:22vw;
+    transition: all ease .3s;
+}
+footer a:hover{
+    font-size:4.5vw;
+    padding:3.2vw 12.2vw;
+    top:4.5vh;
 }
 #main-index button{
     background-color:#0063b3;
@@ -36,6 +43,11 @@ footer a{
     font-size:8.5vw;
     color:#ffffff;
     box-shadow: 5px 10px 10px #000000;
+    transition: all ease .4s;
+}
+#main-index button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 #main-index .box{
     background-color: #343434;
@@ -44,9 +56,7 @@ footer a{
     margin-bottom:10vw;
 }
 #main-index .box p{
-    color:#ffffff;
     font-size:5vw;
-    font-family: sans-serif;
     display:block;
     text-decoration:none;
     text-align:center;
@@ -54,8 +64,8 @@ footer a{
 }
 #main-index .box input{
     background-color:#343434;
-    color:#ffffff;
     border:none;
+    color:#ffffff;
     text-align:center;
     width:20vw;
     font-size:10vw;
@@ -64,4 +74,147 @@ footer a{
 #main-index .box img{
     width:8vw;
     display:inline-block;
+    position: relative;
+}
+#left-arrow, #right-arrow{
+    transition: all ease .1s;
+}
+#left-arrow:hover, #right-arrow:hover { 
+    transform: scale(1.5); 
+    cursor: pointer;
+}
+
+/*NORMAL SEARCH*/
+#header-search{
+    height:10vw;
+    background-color:#4a4a4a;
+    position:relative;
+}
+#header-search i{
+    width:30%;
+    font-size:6vw;
+    margin-top:1.5vw;
+    margin-left:1vw;
+    color:#ffffff;
+    transition: all ease .3s;
+}
+#header-search i:hover{
+    transform: scale(1.1);
+    margin-left:1vw;
+}
+#header-search .back-text{
+    text-decoration: none;
+    font-size:4.5vw;
+    position: relative;
+    left: -15vw;
+    transition: all ease .2s;
+}
+#header-search .back-text:hover{
+    font-size:5vw;
+}
+#main-search{
+    padding:15vw 10vw 5vw 10vw;
+    height:70vw;
+}
+#main-search p{
+    display:inline;
+    font-size:5vw;
+}
+#main-search p:last-of-type{
+    display:inline-block;
+    margin-top:10vw;
+}
+#main-search select{
+    display: inline;
+    position:relative;
+    right:-20vw;
+    background-color:#343434;
+    color:#ffffff;
+    font-size:5vw;
+    border:none;
+}
+#main-search select:last-of-type{
+    right:-34vw;
+}
+#main-search input{
+    color: #ffffff;
+    background-color: #343434;
+    font-size:5vw;
+    margin-top:10vw;
+    border:none;
+    text-align:center;
+    border-bottom: #4a4a4a solid 1px;
+    position: relative;
+    left:10vw;
+}
+footer button{
+    background-color:#0063b3;
+    color:#ffffff;
+    text-decoration:none;
+    padding:3vw 12vw;
+    border-radius:30vw;
+    font-size:4vw;
+    position: relative;
+    top:1vw;
+    left:30vw;
+    border:none;
+    transition: all ease .2s;
+}
+footer button:hover{
+    transform: scale(1.1);
+}
+/*RESULT1, RESULT2, RESULT3, RESULT4*/
+.header-result{
+    height:10vw;
+    background-color:#4a4a4a;
+    position:relative;
+}
+.header-result i{
+    width:30%;
+    font-size:6vw;
+    margin-top:1.5vw;
+    margin-left:1vw;
+    color:#ffffff;
+    transition: all ease .3s;
+}
+.header-result i:hover{
+    transform: scale(1.1);
+    margin-left:1vw;
+}
+.header-result .back-text{
+    text-decoration: none;
+    font-size:4.5vw;
+    position: relative;
+    left: -15vw;
+    top:-0.5vw;
+    transition: all ease .2s;
+}
+.header-result .back-text:hover{
+    font-size:5vw;
+    top:-0.8vw;
+}
+.main-result{
+    padding:10vw 5vw;
+}
+.main-result .location-img{
+    width:70vw;
+    margin:10vh 0vw 0vh 8vw;
+}
+.main-result .p-sign{
+    width:10vw;
+    display: inline;
+    margin-right:2vw;
+    position: relative;
+    top:6vh;
+}
+.main-result h1{
+    display:inline;
+    font-size:5vw;
+}
+.main-result p{
+    font-size:3vw;
+    margin-left:13vw;
+}
+.bold{
+    font-weight:bold;
 }
