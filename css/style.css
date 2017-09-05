@@ -14,6 +14,12 @@ footer{
     background-color:#4a4a4a;
     height:15vh;
 }
+@keyframes color{
+    0% {background-color:#4b91cc;}
+    25% {background-color: #4b91cc;}
+    50% {background-color:#0063b3;}
+    100% {background-color:#0063b3;}
+}
 footer a{
     background-color:#0063b3;
     text-decoration:none;
@@ -23,12 +29,17 @@ footer a{
     position: relative;
     top:5vh;
     left:22vw;
-    transition: all ease .3s;
+    transition: all ease .8s;
+    animation-name:color;
+    animation-duration:4s;
 }
+
 footer a:hover{
     font-size:4.5vw;
     padding:3.2vw 12.2vw;
     top:4.5vh;
+    left:20vw;
+    background-color:#4b91cc;
 }
 #main-index button{
     background-color:#0063b3;
@@ -44,9 +55,11 @@ footer a:hover{
     color:#ffffff;
     box-shadow: 5px 10px 10px #000000;
     transition: all ease .4s;
+    animation-name:color;
+    animation-duration:4s;
 }
 #main-index button:hover{
-    transform: scale(1.1);
+    transform: rotate(20deg);
     cursor: pointer;
 }
 #main-index .box{
@@ -77,13 +90,12 @@ footer a:hover{
     position: relative;
 }
 #left-arrow, #right-arrow{
-    transition: all ease .1s;
+    transition: all ease .2s;
 }
 #left-arrow:hover, #right-arrow:hover { 
     transform: scale(1.5); 
     cursor: pointer;
 }
-
 /*NORMAL SEARCH*/
 #header-search{
     height:10vw;
@@ -107,10 +119,11 @@ footer a:hover{
     font-size:4.5vw;
     position: relative;
     left: -15vw;
-    transition: all ease .2s;
+    transition: all ease .5s;
 }
 #header-search .back-text:hover{
     font-size:5vw;
+    left:-20vw;
 }
 #main-search{
     padding:15vw 10vw 5vw 10vw;
@@ -158,10 +171,12 @@ footer button{
     top:1vw;
     left:30vw;
     border:none;
-    transition: all ease .2s;
+    transition: all ease 0.6s;
+    cursor: pointer;
 }
 footer button:hover{
     transform: scale(1.1);
+    background-color:#4b91cc;
 }
 /*RESULT1, RESULT2, RESULT3, RESULT4*/
 .header-result{
@@ -187,11 +202,11 @@ footer button:hover{
     position: relative;
     left: -15vw;
     top:-0.5vw;
-    transition: all ease .2s;
+    transition: all ease .5s;
 }
 .header-result .back-text:hover{
     font-size:5vw;
-    top:-0.8vw;
+    left:-20vw;
 }
 .main-result{
     padding:10vw 5vw;
