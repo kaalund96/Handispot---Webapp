@@ -59,8 +59,11 @@ footer a:hover{
     animation-duration:4s;
 }
 #main-index button:hover{
-    transform: rotate(20deg);
     cursor: pointer;
+    background-color:#4b91cc;
+}
+#main-index button:active{
+    transform: scale(0.8)
 }
 #main-index .box{
     background-color: #343434;
