@@ -8,8 +8,7 @@
     </head>
     <body>
     <header id="header-search">
-        <a href="index.php"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-        <a href="index.php" class="back-text">Home</a>
+        <a href="index.php"><i class="fa fa-arrow-left" aria-hidden="true"></i>Home</a>
     </header>
     <main id="main-search">
         <p>Max price pr. hour</p>

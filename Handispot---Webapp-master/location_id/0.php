@@ -12,8 +12,7 @@
   <body>
 
     <header>
-      <a href="../index.php"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-      <a href="../index.php">return</a>
+      <a href="../index.php"><i class="fa fa-arrow-left" aria-hidden="true"></i>Return</a>
     </header>
 
     <main id="specs">

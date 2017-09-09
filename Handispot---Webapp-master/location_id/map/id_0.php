@@ -3,10 +3,10 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <link href="./css/font-awesome.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="/Handispot---Webapp-master/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/Handispot---Webapp-master/css/style.css" rel="stylesheet">
 
-    <title>Nørreport</title>
+    <title>Nørreport 22</title>
     <style media="screen">
       body{
         background: #fff;
@@ -17,8 +17,7 @@
 <body>
 
   <header>
-    <a href="../index.php"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-    <a href="../0.php">return</a>
+    <a href="../0.php"><i class="fa fa-arrow-left" aria-hidden="true"></i>Return</a>
   </header>
 
   <main class="mainGPS">

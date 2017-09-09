@@ -6,16 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-
 </head>
 <body>
 
-
 	<header id="frontHeader">
-			<a href="index.php"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-			<a href="index.php" class="back-text">Home</a>
+			<a href="index.php"><i class="fa fa-arrow-left" aria-hidden="true"></i>Home</a>
 	</header>
+
 		<img id="logo" src="./img/logo.svg">
+
 	<main id="main-index">
 			<button id="btn">Quick search</button>
 			<article class="box">
@@ -25,8 +24,9 @@
 					<img src="./img/right-arrow.png" id="up" onclick="modify_qty(1)">
 			</article>
 
-			<ul id="list">
-			</ul>
+			<div id="loading" class="loader"></div>
+
+		<ul id="list"></ul>
 
 	</main>
 
@@ -36,8 +36,6 @@
 
 <!-- geolocation calculator (haversine formular) -->
 <script src="js/haversine.js"></script>
-<!-- demo objects -->
-<script src="js/locations_objects.js"></script>
 <!-- get list items -->
 <script type="text/javascript">
 
@@ -56,12 +54,16 @@ function modify_qty(val) {
     document.getElementById('qty').value = new_qty;
     return searchRadius = new_qty;
 }
+
 var fHeader = document.getElementById("frontHeader");
 var logo = document.getElementById("logo");
 var btn = document.getElementById("btn");
 var ul = document.getElementById('list');
 
+
+
 	btn.onclick = function(){
+		document.getElementById('loading').style.display = "flex";
 		fHeader.style.display = "block";
 		logo.style.display = "none";
 		ul.style.display = "block";
@@ -114,7 +116,6 @@ function map(position){
 
 			for (i in features) {
 
-				function loop() {
 				var street = features[i].properties.Vejnavn;
 
 						var destX =	features[i].geometry.coordinates[0][0][0];
@@ -139,29 +140,22 @@ function map(position){
 						var distanceBetween = haversine(start, end);
 						var avaidableSpots = distanceBetween <= searchRadius;
 
-
 						//console.log(getSorted(dbList, features));
 
 						if (avaidableSpots) {
-
 							var href = '"location_id/' + [i] + '.php"';
 							 ul.innerHTML += `<li>` + "<a href=" + href + ">" + `${street} <br><small>` + distanceDisplay + " km. away</small></a> </li>";
-
 						 }
 					 }
 
-					 setTimeout(loop(), 3000 + (i * 4000));
-
+					 document.getElementById('loading').style.display = "none";
+					 if(!ul.children[0]){
+						 ul.innerHTML = "<li>No results found</li>";
+					 	}
 					 }
 					}
-
-
 				}
-
 			}
-
-		}
-
 
 
 </script>
