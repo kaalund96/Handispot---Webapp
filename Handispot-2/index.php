@@ -39,7 +39,7 @@
 <!-- get list items -->
 <script type="text/javascript">
 
-var searchRadius;
+var searchRadius = 5;
 
 function modify_qty(val) {
     var qty = document.getElementById('qty').value;

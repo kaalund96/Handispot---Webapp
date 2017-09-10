@@ -47,9 +47,8 @@ xmlhttp.onload = function() {
     var after = price.derefter;
     console.log(obj);
 
-
-    specs.innerHTML = "<h1>" + title + "</h1><br><p>Betalings tidsrum:<br> <br> Normalt: " + weekdays + "<br>Lørdage: " + saturdays + "</p>" +
-    "<br><p>Pris:<br> <br>Handicapd: " + handicapPrice + "<br>First hour: " + firstHour + " kr. <br>Second hour: " + secondHour + " kr. <br>After that: " + after + " kr. </p>";
+    specs.innerHTML = "<h1>" + title + "</h1><br><p>Payment period:<br> <br> Normal: " + weekdays + "<br>Saturdays: " + saturdays + "</p>" +
+    "<br><p>Pris:<br> <br>Handicapped: " + handicapPrice + "<br>First hour: " + firstHour + " kr. <br>Second hour: " + secondHour + " kr. <br>After that: " + after + " kr. </p>";
 
 }
 
