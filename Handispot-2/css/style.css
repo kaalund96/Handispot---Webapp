@@ -140,7 +140,7 @@ footer button:hover, footer a:hover{
 #left-arrow, #right-arrow{
     transition: all ease .2s;
 }
-#left-arrow:hover, #right-arrow:hover {
+#up:hover, #down:hover {
     transform: scale(1.5);
     cursor: pointer;
 }
