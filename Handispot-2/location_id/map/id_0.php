@@ -28,7 +28,7 @@
 <script>
 
   xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", "/Handispot-2/parking_data.json", true);
+  xmlhttp.open("GET", "/project3.1/parking_data.json", true);
   xmlhttp.send();
 
   xmlhttp.onload = function(responseText, func) {
