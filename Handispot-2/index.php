@@ -38,7 +38,7 @@
 <script src="js/haversine.js"></script>
 <!-- get list items -->
 <script type="text/javascript">
-
+//radius-btn function
 var searchRadius = 5;
 
 function modify_qty(val) {
@@ -54,7 +54,7 @@ function modify_qty(val) {
     document.getElementById('qty').value = new_qty;
     return searchRadius = new_qty;
 }
-
+//variables is made
 var fHeader = document.getElementById("frontHeader");
 var logo = document.getElementById("logo");
 var btn = document.getElementById("btn");
