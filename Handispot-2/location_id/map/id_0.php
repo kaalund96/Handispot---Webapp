@@ -3,8 +3,8 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <link href="/Handispot---Webapp-master/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/Handispot---Webapp-master/css/style.css" rel="stylesheet">
+    <link href="/Handispot-2/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/Handispot-2/css/style.css" rel="stylesheet">
 
     <title>Nørreport 22</title>
     <style media="screen">
@@ -28,7 +28,7 @@
 <script>
 
   xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", "/project3.1/parking_data.json", true);
+  xmlhttp.open("GET", "/Handispot-2/parking_data.json", true);
   xmlhttp.send();
 
   xmlhttp.onload = function(responseText, func) {
