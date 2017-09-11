@@ -32,7 +32,7 @@ var xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {
 
       //the number in the array to find the object
-      var x = 0;
+      var x = 2;
       //convert to JSON data
       var obj = JSON.parse(this.responseText);
       var title =	obj.features[x].properties.Vejnavn;
