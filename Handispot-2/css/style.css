@@ -89,8 +89,6 @@ footer button:hover, footer a:hover{
     color:#ffffff;
     box-shadow: 0px 10px 25px 0px #000000;
     transition: all ease-in-out .3s;
-    animation-name:color;
-    animation-duration:4s;
 }
 #main-index button:hover{
     cursor: pointer;
@@ -102,13 +100,6 @@ footer button:hover, footer a:hover{
     transform: scale(0.9);
     box-shadow: none;
 		box-shadow: 0px 10px 40px 10px #000000
-}
-
-@keyframes color{
-    0% {background-color:#4b91cc;}
-    25% {background-color: #4b91cc;}
-    50% {background-color:#0063b3;}
-    100% {background-color:#0063b3;}
 }
 
 #main-index .box{
