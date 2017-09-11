@@ -49,8 +49,8 @@ function modify_qty(val) {
     if (new_qty < 0) {
         new_qty = 0;
     }
-    if(new_qty >10){
-        new_qty = 10;
+    if(new_qty >100){
+        new_qty = 100;
     }
     document.getElementById('qty').value = new_qty;
     return searchRadius = new_qty;
