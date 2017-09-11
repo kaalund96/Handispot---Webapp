@@ -38,11 +38,6 @@ var xmlhttp = new XMLHttpRequest();
       var title =	obj.features[x].properties.Vejnavn;
       var weekdays =	obj.features[x].properties.B_tidsrum_hverdage;
       var saturdays =	obj.features[x].properties.B_tidsrum_loerdage;
-      var price = obj.features[x].properties.Pris;
-      var handicapPrice = price.Handicap;
-      var firstHour = price.første_time;
-      var secondHour = price.anden_time;
-      var after = price.derefter;
       //destination coordinates
       var destY =	obj.features[x].geometry.coordinates[0][0][0];
       var destX =	obj.features[x].geometry.coordinates[0][0][1];
@@ -56,8 +51,7 @@ var xmlhttp = new XMLHttpRequest();
       document.cookie = "t=" + title;
 
       //wirte data to the main tag
-      specs.innerHTML = "<h1>" + title + "</h1><br><p>Payment period:<br> <br> Normal: " + weekdays + "<br>Saturdays: " + saturdays + "</p>" +
-      "<br><p>Pris:<br> <br>Handicapped: " + handicapPrice + "<br>First hour: " + firstHour + " kr. <br>Second hour: " + secondHour + " kr. <br>After that: " + after + " kr. </p>";
+      specs.innerHTML = "<h1>" + title + "</h1><br><p>Payment period:<br> <br> Normal: " + weekdays + "<br>Saturdays: " + saturdays + "</p>";
   }
 
 
