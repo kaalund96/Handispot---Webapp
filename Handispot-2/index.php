@@ -5,6 +5,7 @@
 	<title>Demo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link href="css/font-awesome.min.css" rel="stylesheet">
+	 <link href="css/animate.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -16,8 +17,8 @@
 	<img id="logo" src="./img/logo.svg">
 
 	<main id="main-index">
-			<button id="btn">Quick search</button>
-			<article class="box">
+			<button id="btn" class="animated jackInTheBox">Quick search</button>
+			<article class="box animated zoomIn">
 					<p>Radius in km</p>
 					<img src="./img/left-arrow.png" id="down" onclick="modify_qty(-1)">
 					<input id="qty" value="5" />
@@ -31,7 +32,7 @@
 	</main>
 
 	<footer>
-			<a href="search.php">Normal Search</a>
+			<a href="search.php" class="animated zoomIn">Normal Search</a>
 	</footer>
 
 <!-- geolocation calculator (haversine formular) -->
@@ -54,7 +55,7 @@ function modify_qty(val) {
     document.getElementById('qty').value = new_qty;
     return searchRadius = new_qty;
 }
-//variables is made
+//variables are made
 var fHeader = document.getElementById("frontHeader");
 var logo = document.getElementById("logo");
 var btn = document.getElementById("btn");
