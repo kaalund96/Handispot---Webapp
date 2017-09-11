@@ -39,7 +39,6 @@ function goBack() {
     var destX = Number(cookieX[1]);
     var destY =  Number(cookieY[1]);
     var title = String(cookieT[1]);
-    console.log(cookie);
 
     document.title = title;
 
