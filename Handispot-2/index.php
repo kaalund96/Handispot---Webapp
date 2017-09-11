@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Demo</title>
+	<title>Handispot</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link href="css/font-awesome.min.css" rel="stylesheet">
 	 <link href="css/animate.css" rel="stylesheet">
@@ -21,7 +21,7 @@
 			<article class="box animated zoomIn">
 					<p>Radius in km</p>
 					<img src="./img/left-arrow.png" id="down" onclick="modify_qty(-1)">
-					<input id="qty" value="5" />
+					<input id="qty" value="5" max="100" />
 					<img src="./img/right-arrow.png" id="up" onclick="modify_qty(1)">
 			</article>
 
@@ -44,17 +44,17 @@ var searchRadius = 5;
 
 function modify_qty(val) {
     var qty = document.getElementById('qty').value;
-    var new_qty = parseInt(qty,10) + val;
+    var new_qty = parseInt(qty) + val;
 
     if (new_qty < 0) {
         new_qty = 0;
     }
-    if(new_qty >100){
-        new_qty = 100;
-    }
+
     document.getElementById('qty').value = new_qty;
     return searchRadius = new_qty;
 }
+
+
 //variables are made
 var fHeader = document.getElementById("frontHeader");
 var logo = document.getElementById("logo");
@@ -70,7 +70,6 @@ var ul = document.getElementById('list');
 		document.getElementsByClassName('box')[0].style.display = "none";
 		//finds your position
 		navigator.geolocation.getCurrentPosition(map, showError);
-
 		//in case of error
 		function showError(error) {
 			switch(error.code) {
@@ -106,8 +105,6 @@ function map(position){
 
 		if (this.readyState == 4 && this.status == 200) {
 			obj = JSON.parse(this.responseText);
-
-			console.log(obj);
 
 			//var features = obj.features;
 			var features = obj.features;
@@ -160,7 +157,6 @@ function map(position){
 					ul.innerHTML = "<li>No results found</li>";
 				}
 			}
-										console.log(pSpots);
 		}
 
 	}
