@@ -1,0 +1,4 @@
+Prototypen er lavet med fokus på mobil
+
+Da vi sad og ryddede op i github er vi kommet til at slette den forkerte index.php. Eneste forskel er, at counter-knappernes id ikke stemmer overens i styling.css.
+De skal hedde #left-arrow og #right-arrow, og ikke #up og #down for at styling og animation bliver tilføjet.
